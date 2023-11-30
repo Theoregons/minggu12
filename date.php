@@ -7,11 +7,9 @@ function salam($waktu, $nama){
 }
 
 function perkalian($angka1, $angka2){
-    return $angka1 * $angka2;
+    $perhitungan = $angka1 * $angka2;
+    return $perhitungan;
 }
-
-$hasil = perkalian(9,2);
-echo $hasil
 
 ?>
 
@@ -23,6 +21,8 @@ echo $hasil
     <title>Document</title>
 </head>
 <body>
-    <h2><?= salam("Pagi ", "Baktiar")?></h2>
+    <?php $hasil = perkalian(9,2); ?>
+    <h2><?= salam("Pagi ", "Baktiar")?> !</h2>
+    <h2>Hasil Perkalian = <?= $hasil ?> </h2>
 </body>
 </html>
