@@ -1,6 +1,6 @@
 <?php
 $todayDate = "30 nov 2023";  
-$returnDate = date('d-m-Y', strtotime('+100 day', strtotime($todayDate)));  
+$returnDate = date('d-m-Y', strtotime('+1000 day', strtotime($todayDate)));  
 ?>
 <!DOCTYPE html>
 <html lang="en">
