@@ -6,6 +6,13 @@ function salam($waktu, $nama){
     return "Selamat ". $waktu. $nama;
 }
 
+function perkalian($angka1, $angka2){
+    return $angka1 * $angka2;
+}
+
+$hasil = perkalian(9,2);
+echo $hasil
+
 ?>
 
 <!DOCTYPE html>
