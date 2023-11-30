@@ -1,15 +1,10 @@
 <?php 
 
+$todayDate = "30 nov 2023";  
+$returnDate = date('d-m-Y', strtotime('-500 day', strtotime($todayDate)));  
 // echo date("l Y-m-d", mktime(20, 03, 0, 05, 26, 2001));
 // echo date("l", strtotime("26 May 2030"));
-function salam($waktu, $nama){
-    return "Selamat ". $waktu. $nama;
-}
-
-function perkalian($angka1, $angka2){
-    $perhitungan = $angka1 * $angka2;
-    return $perhitungan;
-}
+ 
 
 ?>
 
@@ -21,8 +16,10 @@ function perkalian($angka1, $angka2){
     <title>Document</title>
 </head>
 <body>
-    <?php $hasil = perkalian(9,2); ?>
-    <h2><?= salam("Pagi ", "Baktiar")?> !</h2>
-    <h2>Hasil Perkalian = <?= $hasil ?> </h2>
+    <h3>
+        Tanggal hari ini = <?= $todayDate;  ?>
+        <br>
+        Tanggal 500 hari sebelum dari skrg = <?= $returnDate;  ?>
+    </h3>
 </body>
 </html>
